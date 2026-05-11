@@ -1,0 +1,463 @@
+------------------------------------------------------------------
+  Running MRIQC version 24.1.0.dev0+gd5b13cb5.d20240826
+  ----------------------------------------------------------------
+
+  NOTICE
+  Copyright © The NiPreps Developers.
+  
+  This product includes software developed by
+  the NiPreps Community (https://nipreps.org/).
+  
+  Portions of this software were developed at the Department of
+  Psychology at Stanford University, Stanford, CA, US.
+  
+  This software contains code ultimately derived from the
+  PCP Quality Assessment Protocol (QAP;
+  http://preprocessed-connectomes-project.org/quality-assessment-protocol)
+  by C. Craddock, S. Giavasis, D. Clark, Z. Shezhad, and J. Pellman.
+  
+  This software is also distributed as a Docker container image.
+  The bootstrapping file for the image ("Dockerfile") is licensed
+  under the MIT License.
+
+  ----------------------------------------------------------------
+
+  * BIDS dataset path: /local/nvme/ds005664_ts010.783806/ds/sourcedata/raw.
+  * Output folder: mriqc.
+  * Analysis levels: ['participant'].
+------------------------------------------------------------------
+
+2026-03-26 22:36:35 |[33;20m IMPORTANT [0m|[33;20m mriqc            [0m|[33;20m Extracting metadata and entities for 3 input runs of modality 't1w'...[0m
+2026-03-26 22:36:35 |[33;20m IMPORTANT [0m|[33;20m mriqc            [0m|[33;20m File size ('t1w'): 0.02|0.01 GB [maximum|average].[0m
+2026-03-26 22:36:35 |[34;20m INFO     [0m|[34;20m mriqc            [0m|[34;20m MRIQC config file: /local/nvme/ds005664_ts010.783806/ds/tmp/config-20260326-223625_ca915abe-51ee-46b2-98eb-7672181826a8.toml.[0m
+2026-03-26 22:36:41 |[34;20m INFO     [0m|[34;20m matplotlib.font_manager [0m|[34;20m generated new fontManager[0m
+2026-03-26 22:36:42 |[33;20m IMPORTANT [0m|[33;20m mriqc            [0m|[33;20m Building MRIQC's workflows...[0m
+2026-03-26 22:36:42 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m Building anatomical MRIQC workflow for 3 NIfTI files..[0m
+2026-03-26 22:36:47 |[33;20m IMPORTANT [0m|[33;20m mriqc            [0m|[33;20m Workflow building finished (exit code 0).[0m
+2026-03-26 22:36:52 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m Workflow mriqc_wf settings: ['check', 'execution', 'logging', 'monitoring'][0m
+2026-03-26 22:36:52 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.conform" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/fd53104ab67be7a3420ede7f45187ae09a297277/conform".[0m
+2026-03-26 22:36:52 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.conform" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/dc07e9d1b58f033a5ccbd12582048f30b67aa888/conform".[0m
+2026-03-26 22:36:52 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.conform" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/07722f3821dad78e9396df2927868fc622a5042d/conform".[0m
+2026-03-26 22:36:52 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "conform" <mriqc.interfaces.common.conform_image.ConformImage>[0m
+2026-03-26 22:36:52 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "conform" <mriqc.interfaces.common.conform_image.ConformImage>[0m
+2026-03-26 22:36:52 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "conform" <mriqc.interfaces.common.conform_image.ConformImage>[0m
+2026-03-26 22:36:52 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "conform", elapsed time 0.441963s.[0m
+2026-03-26 22:36:53 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "conform", elapsed time 0.565685s.[0m
+2026-03-26 22:36:53 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "conform", elapsed time 0.820635s.[0m
+2026-03-26 22:36:54 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.AirMaskWorkflow.RotationMask" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/AirMaskWorkflow/fd53104ab67be7a3420ede7f45187ae09a297277/RotationMask".[0m
+2026-03-26 22:36:54 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.synthstrip_wf.pre_clip" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/synthstrip_wf/fd53104ab67be7a3420ede7f45187ae09a297277/pre_clip".[0m
+2026-03-26 22:36:54 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.synthstrip_wf.pre_clip" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/synthstrip_wf/07722f3821dad78e9396df2927868fc622a5042d/pre_clip".[0m
+2026-03-26 22:36:54 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.PlotMosaicNoise" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/fd53104ab67be7a3420ede7f45187ae09a297277/PlotMosaicNoise".[0m
+2026-03-26 22:36:54 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.PlotMosaicNoise" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/dc07e9d1b58f033a5ccbd12582048f30b67aa888/PlotMosaicNoise".[0m
+2026-03-26 22:36:54 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.synthstrip_wf.pre_clip" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/synthstrip_wf/dc07e9d1b58f033a5ccbd12582048f30b67aa888/pre_clip".[0m
+2026-03-26 22:36:54 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.AirMaskWorkflow.RotationMask" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/AirMaskWorkflow/dc07e9d1b58f033a5ccbd12582048f30b67aa888/RotationMask".[0m
+2026-03-26 22:36:54 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.AirMaskWorkflow.RotationMask" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/AirMaskWorkflow/07722f3821dad78e9396df2927868fc622a5042d/RotationMask".[0m
+2026-03-26 22:36:54 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "pre_clip" <niworkflows.interfaces.nibabel.IntensityClip>[0m
+2026-03-26 22:36:54 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "PlotMosaicNoise" <nireports.interfaces.mosaic.PlotMosaic>[0m
+2026-03-26 22:36:54 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "RotationMask" <mriqc.interfaces.anatomical.RotationMask>[0m
+2026-03-26 22:36:54 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "pre_clip" <niworkflows.interfaces.nibabel.IntensityClip>[0m
+2026-03-26 22:36:54 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "RotationMask" <mriqc.interfaces.anatomical.RotationMask>[0m
+2026-03-26 22:36:54 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "PlotMosaicNoise" <nireports.interfaces.mosaic.PlotMosaic>[0m
+2026-03-26 22:36:54 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "RotationMask" <mriqc.interfaces.anatomical.RotationMask>[0m
+2026-03-26 22:36:54 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "pre_clip" <niworkflows.interfaces.nibabel.IntensityClip>[0m
+2026-03-26 22:36:55 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "RotationMask", elapsed time 1.4487s.[0m
+2026-03-26 22:36:55 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "RotationMask", elapsed time 1.456091s.[0m
+2026-03-26 22:36:55 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "RotationMask", elapsed time 1.547582s.[0m
+2026-03-26 22:36:56 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.PlotMosaicNoise" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/07722f3821dad78e9396df2927868fc622a5042d/PlotMosaicNoise".[0m
+2026-03-26 22:36:56 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "PlotMosaicNoise" <nireports.interfaces.mosaic.PlotMosaic>[0m
+2026-03-26 22:36:59 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "PlotMosaicNoise", elapsed time 5.300627s.[0m
+2026-03-26 22:37:00 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_background" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/fd53104ab67be7a3420ede7f45187ae09a297277/ds_report_background".[0m
+2026-03-26 22:37:00 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ds_report_background" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-03-26 22:37:00 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ds_report_background", elapsed time 0.009725s.[0m
+2026-03-26 22:37:01 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "PlotMosaicNoise", elapsed time 6.795885s.[0m
+2026-03-26 22:37:02 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_background" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/dc07e9d1b58f033a5ccbd12582048f30b67aa888/ds_report_background".[0m
+2026-03-26 22:37:02 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ds_report_background" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-03-26 22:37:02 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ds_report_background", elapsed time 0.006462s.[0m
+2026-03-26 22:37:02 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "PlotMosaicNoise", elapsed time 6.14852s.[0m
+2026-03-26 22:37:04 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_background" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/07722f3821dad78e9396df2927868fc622a5042d/ds_report_background".[0m
+2026-03-26 22:37:04 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ds_report_background" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-03-26 22:37:04 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ds_report_background", elapsed time 0.00507s.[0m
+2026-03-26 22:37:10 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "pre_clip", elapsed time 15.795926s.[0m
+2026-03-26 22:37:10 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "pre_clip", elapsed time 16.131411s.[0m
+2026-03-26 22:37:19 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "pre_clip", elapsed time 25.045862s.[0m
+2026-03-26 22:37:20 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.synthstrip_wf.pre_n4" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/synthstrip_wf/fd53104ab67be7a3420ede7f45187ae09a297277/pre_n4".[0m
+2026-03-26 22:37:20 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "pre_n4" <nipype.interfaces.ants.segmentation.N4BiasFieldCorrection>[0m
+2026-03-26 22:37:39 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "pre_n4", elapsed time 18.662049s.[0m
+2026-03-26 22:37:40 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.synthstrip_wf.pre_n4" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/synthstrip_wf/dc07e9d1b58f033a5ccbd12582048f30b67aa888/pre_n4".[0m
+2026-03-26 22:37:40 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "pre_n4" <nipype.interfaces.ants.segmentation.N4BiasFieldCorrection>[0m
+2026-03-26 22:38:15 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "pre_n4", elapsed time 35.097227s.[0m
+2026-03-26 22:38:16 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.synthstrip_wf.pre_n4" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/synthstrip_wf/07722f3821dad78e9396df2927868fc622a5042d/pre_n4".[0m
+2026-03-26 22:38:16 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "pre_n4" <nipype.interfaces.ants.segmentation.N4BiasFieldCorrection>[0m
+2026-03-26 22:38:36 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "pre_n4", elapsed time 19.386805s.[0m
+2026-03-26 22:38:36 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.synthstrip_wf.synthstrip" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/synthstrip_wf/fd53104ab67be7a3420ede7f45187ae09a297277/synthstrip".[0m
+2026-03-26 22:38:36 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "synthstrip" <mriqc.interfaces.synthstrip.SynthStrip>[0m
+2026-03-26 22:39:01 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "synthstrip", elapsed time 25.284883s.[0m
+2026-03-26 22:39:02 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.synthstrip_wf.synthstrip" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/synthstrip_wf/dc07e9d1b58f033a5ccbd12582048f30b67aa888/synthstrip".[0m
+2026-03-26 22:39:02 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "synthstrip" <mriqc.interfaces.synthstrip.SynthStrip>[0m
+2026-03-26 22:39:27 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "synthstrip", elapsed time 25.627237s.[0m
+2026-03-26 22:39:28 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.synthstrip_wf.synthstrip" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/synthstrip_wf/07722f3821dad78e9396df2927868fc622a5042d/synthstrip".[0m
+2026-03-26 22:39:28 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "synthstrip" <mriqc.interfaces.synthstrip.SynthStrip>[0m
+2026-03-26 22:39:51 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "synthstrip", elapsed time 23.220937s.[0m
+2026-03-26 22:39:52 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.synthstrip_wf.post_n4" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/synthstrip_wf/fd53104ab67be7a3420ede7f45187ae09a297277/post_n4".[0m
+2026-03-26 22:39:52 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "post_n4" <nipype.interfaces.ants.segmentation.N4BiasFieldCorrection>[0m
+2026-03-26 22:40:02 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "post_n4", elapsed time 10.003721s.[0m
+2026-03-26 22:40:04 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.ComputeIQMs.smoothness" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/ComputeIQMs/fd53104ab67be7a3420ede7f45187ae09a297277/smoothness".[0m
+2026-03-26 22:40:04 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.PlotMosaicZoomed" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/fd53104ab67be7a3420ede7f45187ae09a297277/PlotMosaicZoomed".[0m
+2026-03-26 22:40:04 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.PlotMosaicZoomed" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/dc07e9d1b58f033a5ccbd12582048f30b67aa888/PlotMosaicZoomed".[0m
+2026-03-26 22:40:04 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.ComputeIQMs.smoothness" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/ComputeIQMs/dc07e9d1b58f033a5ccbd12582048f30b67aa888/smoothness".[0m
+2026-03-26 22:40:04 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.PlotBrainmask" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/dc07e9d1b58f033a5ccbd12582048f30b67aa888/PlotBrainmask".[0m
+2026-03-26 22:40:04 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.ComputeIQMs.smoothness" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/ComputeIQMs/07722f3821dad78e9396df2927868fc622a5042d/smoothness".[0m
+2026-03-26 22:40:04 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.PlotMosaicZoomed" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/07722f3821dad78e9396df2927868fc622a5042d/PlotMosaicZoomed".[0m
+2026-03-26 22:40:04 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "PlotBrainmask" <nireports.interfaces.mosaic.PlotContours>[0m
+2026-03-26 22:40:04 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "smoothness" <nipype.interfaces.afni.utils.FWHMx>[0m
+2026-03-26 22:40:04 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "PlotMosaicZoomed" <nireports.interfaces.mosaic.PlotMosaic>[0m
+2026-03-26 22:40:04 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "smoothness" <nipype.interfaces.afni.utils.FWHMx>[0m
+2026-03-26 22:40:04 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "PlotMosaicZoomed" <nireports.interfaces.mosaic.PlotMosaic>[0m
+2026-03-26 22:40:04 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "smoothness" <nipype.interfaces.afni.utils.FWHMx>[0m
+2026-03-26 22:40:04 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "PlotMosaicZoomed" <nireports.interfaces.mosaic.PlotMosaic>[0m
+2026-03-26 22:40:04 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.PlotBrainmask" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/fd53104ab67be7a3420ede7f45187ae09a297277/PlotBrainmask".[0m
+2026-03-26 22:40:04 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "PlotBrainmask" <nireports.interfaces.mosaic.PlotContours>[0m
+2026-03-26 22:40:07 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "PlotBrainmask", elapsed time 3.4833439999999998s.[0m
+2026-03-26 22:40:08 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.PlotBrainmask" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/07722f3821dad78e9396df2927868fc622a5042d/PlotBrainmask".[0m
+2026-03-26 22:40:08 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "PlotBrainmask" <nireports.interfaces.mosaic.PlotContours>[0m
+2026-03-26 22:40:08 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "PlotBrainmask", elapsed time 4.268961s.[0m
+2026-03-26 22:40:09 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "smoothness", elapsed time 4.773173s.[0m
+2026-03-26 22:40:09 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "smoothness", elapsed time 4.815498s.[0m
+2026-03-26 22:40:09 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "PlotMosaicZoomed", elapsed time 5.127945s.[0m
+2026-03-26 22:40:09 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "PlotMosaicZoomed", elapsed time 5.313703s.[0m
+2026-03-26 22:40:09 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "PlotMosaicZoomed", elapsed time 5.674136s.[0m
+2026-03-26 22:40:10 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_zoomed" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/fd53104ab67be7a3420ede7f45187ae09a297277/ds_report_zoomed".[0m
+2026-03-26 22:40:10 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.synthstrip_wf.final_masked" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/synthstrip_wf/fd53104ab67be7a3420ede7f45187ae09a297277/final_masked".[0m
+2026-03-26 22:40:10 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "final_masked" <niworkflows.interfaces.nibabel.ApplyMask>[0m
+2026-03-26 22:40:10 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ds_report_zoomed" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-03-26 22:40:10 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ds_report_zoomed", elapsed time 0.005023s.[0m
+2026-03-26 22:40:10 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_bmask" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/fd53104ab67be7a3420ede7f45187ae09a297277/ds_report_bmask".[0m
+2026-03-26 22:40:10 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ds_report_bmask" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-03-26 22:40:10 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ds_report_bmask", elapsed time 0.00494s.[0m
+2026-03-26 22:40:10 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_zoomed" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/dc07e9d1b58f033a5ccbd12582048f30b67aa888/ds_report_zoomed".[0m
+2026-03-26 22:40:10 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ds_report_zoomed" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-03-26 22:40:10 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ds_report_zoomed", elapsed time 0.004878s.[0m
+2026-03-26 22:40:10 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_bmask" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/dc07e9d1b58f033a5ccbd12582048f30b67aa888/ds_report_bmask".[0m
+2026-03-26 22:40:10 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ds_report_bmask" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-03-26 22:40:10 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ds_report_bmask", elapsed time 0.004887s.[0m
+2026-03-26 22:40:10 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "final_masked", elapsed time 0.353615s.[0m
+2026-03-26 22:40:10 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_zoomed" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/07722f3821dad78e9396df2927868fc622a5042d/ds_report_zoomed".[0m
+2026-03-26 22:40:10 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ds_report_zoomed" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-03-26 22:40:10 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ds_report_zoomed", elapsed time 0.005027s.[0m
+2026-03-26 22:40:12 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "PlotBrainmask", elapsed time 4.479504s.[0m
+2026-03-26 22:40:13 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "smoothness", elapsed time 9.198364s.[0m
+2026-03-26 22:40:14 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.synthstrip_wf.post_n4" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/synthstrip_wf/dc07e9d1b58f033a5ccbd12582048f30b67aa888/post_n4".[0m
+2026-03-26 22:40:14 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "post_n4" <nipype.interfaces.ants.segmentation.N4BiasFieldCorrection>[0m
+2026-03-26 22:40:31 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "post_n4", elapsed time 16.872164s.[0m
+2026-03-26 22:40:32 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.synthstrip_wf.post_n4" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/synthstrip_wf/07722f3821dad78e9396df2927868fc622a5042d/post_n4".[0m
+2026-03-26 22:40:32 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "post_n4" <nipype.interfaces.ants.segmentation.N4BiasFieldCorrection>[0m
+2026-03-26 22:40:42 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "post_n4", elapsed time 10.134623s.[0m
+2026-03-26 22:40:44 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.SpatialNormalization.SpatialNormalization" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/fd53104ab67be7a3420ede7f45187ae09a297277/SpatialNormalization".[0m
+2026-03-26 22:40:44 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "SpatialNormalization" <niworkflows.interfaces.reportlets.registration.SpatialNormalizationRPT>[0m
+2026-03-26 22:40:44 |[34;20m INFO     [0m|[34;20m niworkflows      [0m|[34;20m Estimating initial transform using AffineInitializer[0m
+2026-03-26 22:40:57 |[34;20m INFO     [0m|[34;20m niworkflows      [0m|[34;20m Loading settings from file /opt/conda/lib/python3.11/site-packages/niworkflows/data/t1w-mni_registration_testing_000.json.[0m
+2026-03-26 22:40:57 |[34;20m INFO     [0m|[34;20m niworkflows      [0m|[34;20m Retry #1, commandline: 
+antsRegistration --collapse-output-transforms 1 --dimensionality 3 --float 0 --initial-moving-transform [ /local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/fd53104ab67be7a3420ede7f45187ae09a297277/SpatialNormalization/transform.mat, 0 ] --initialize-transforms-per-stage 0 --interpolation LanczosWindowedSinc --output [ ants_t1_to_mni, ants_t1_to_mni_Warped.nii.gz ] --transform Rigid[ 1.0 ] --metric Mattes[ /local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/fd53104ab67be7a3420ede7f45187ae09a297277/SpatialNormalization/fixed_masked.nii.gz, /local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/fd53104ab67be7a3420ede7f45187ae09a297277/SpatialNormalization/moving_masked.nii.gz, 1, 56, Random, 0.2 ] --convergence [ 20, 1e-07, 15 ] --smoothing-sigmas 4.0vox --shrink-factors 2 --use-histogram-matching 0 --transform Affine[ 1.0 ] --metric Mattes[ /local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/fd53104ab67be7a3420ede7f45187ae09a297277/SpatialNormalization/fixed_masked.nii.gz, /local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/fd53104ab67be7a3420ede7f45187ae09a297277/SpatialNormalization/moving_masked.nii.gz, 1, 56, Random, 0.1 ] --convergence [ 15, 1e-08, 5 ] --smoothing-sigmas 2.0vox --shrink-factors 1 --use-histogram-matching 1 --winsorize-image-intensities [ 0.005, 0.995 ]  --write-composite-transform 1[0m
+2026-03-26 22:41:00 |[34;20m INFO     [0m|[34;20m niworkflows      [0m|[34;20m Successful spatial normalization (retry #1).[0m
+2026-03-26 22:41:02 |[34;20m INFO     [0m|[34;20m niworkflows      [0m|[34;20m Report - setting fixed (/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/fd53104ab67be7a3420ede7f45187ae09a297277/SpatialNormalization/fixed_masked.nii.gz) and moving (/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/fd53104ab67be7a3420ede7f45187ae09a297277/SpatialNormalization/ants_t1_to_mni_Warped.nii.gz) images[0m
+2026-03-26 22:41:02 |[34;20m INFO     [0m|[34;20m niworkflows      [0m|[34;20m Generating visual report[0m
+2026-03-26 22:41:18 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "SpatialNormalization", elapsed time 33.723983s.[0m
+2026-03-26 22:41:18 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_bmask" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/07722f3821dad78e9396df2927868fc622a5042d/ds_report_bmask".[0m
+2026-03-26 22:41:18 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.synthstrip_wf.final_masked" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/synthstrip_wf/07722f3821dad78e9396df2927868fc622a5042d/final_masked".[0m
+2026-03-26 22:41:18 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.synthstrip_wf.final_masked" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/synthstrip_wf/dc07e9d1b58f033a5ccbd12582048f30b67aa888/final_masked".[0m
+2026-03-26 22:41:18 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ds_report_bmask" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-03-26 22:41:18 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "final_masked" <niworkflows.interfaces.nibabel.ApplyMask>[0m
+2026-03-26 22:41:18 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "final_masked" <niworkflows.interfaces.nibabel.ApplyMask>[0m
+2026-03-26 22:41:18 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ds_report_bmask", elapsed time 0.005104s.[0m
+2026-03-26 22:41:18 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_norm" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/fd53104ab67be7a3420ede7f45187ae09a297277/ds_report_norm".[0m
+2026-03-26 22:41:18 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ds_report_norm" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-03-26 22:41:18 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ds_report_norm", elapsed time 0.005581s.[0m
+2026-03-26 22:41:18 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "final_masked", elapsed time 0.368304s.[0m
+2026-03-26 22:41:18 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "final_masked", elapsed time 0.610996s.[0m
+2026-03-26 22:41:20 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.SpatialNormalization.SpatialNormalization" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/dc07e9d1b58f033a5ccbd12582048f30b67aa888/SpatialNormalization".[0m
+2026-03-26 22:41:20 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "SpatialNormalization" <niworkflows.interfaces.reportlets.registration.SpatialNormalizationRPT>[0m
+2026-03-26 22:41:21 |[34;20m INFO     [0m|[34;20m niworkflows      [0m|[34;20m Estimating initial transform using AffineInitializer[0m
+2026-03-26 22:41:34 |[34;20m INFO     [0m|[34;20m niworkflows      [0m|[34;20m Terminal outputs of initialization saved (/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/dc07e9d1b58f033a5ccbd12582048f30b67aa888/SpatialNormalization/stderr.nipype-init).[0m
+2026-03-26 22:41:34 |[34;20m INFO     [0m|[34;20m niworkflows      [0m|[34;20m Loading settings from file /opt/conda/lib/python3.11/site-packages/niworkflows/data/t1w-mni_registration_testing_000.json.[0m
+2026-03-26 22:41:34 |[34;20m INFO     [0m|[34;20m niworkflows      [0m|[34;20m Retry #1, commandline: 
+antsRegistration --collapse-output-transforms 1 --dimensionality 3 --float 0 --initial-moving-transform [ /local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/dc07e9d1b58f033a5ccbd12582048f30b67aa888/SpatialNormalization/transform.mat, 0 ] --initialize-transforms-per-stage 0 --interpolation LanczosWindowedSinc --output [ ants_t1_to_mni, ants_t1_to_mni_Warped.nii.gz ] --transform Rigid[ 1.0 ] --metric Mattes[ /local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/dc07e9d1b58f033a5ccbd12582048f30b67aa888/SpatialNormalization/fixed_masked.nii.gz, /local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/dc07e9d1b58f033a5ccbd12582048f30b67aa888/SpatialNormalization/moving_masked.nii.gz, 1, 56, Random, 0.2 ] --convergence [ 20, 1e-07, 15 ] --smoothing-sigmas 4.0vox --shrink-factors 2 --use-histogram-matching 0 --transform Affine[ 1.0 ] --metric Mattes[ /local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/dc07e9d1b58f033a5ccbd12582048f30b67aa888/SpatialNormalization/fixed_masked.nii.gz, /local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/dc07e9d1b58f033a5ccbd12582048f30b67aa888/SpatialNormalization/moving_masked.nii.gz, 1, 56, Random, 0.1 ] --convergence [ 15, 1e-08, 5 ] --smoothing-sigmas 2.0vox --shrink-factors 1 --use-histogram-matching 1 --winsorize-image-intensities [ 0.005, 0.995 ]  --write-composite-transform 1[0m
+2026-03-26 22:41:38 |[34;20m INFO     [0m|[34;20m niworkflows      [0m|[34;20m Successful spatial normalization (retry #1).[0m
+2026-03-26 22:41:40 |[34;20m INFO     [0m|[34;20m niworkflows      [0m|[34;20m Report - setting fixed (/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/dc07e9d1b58f033a5ccbd12582048f30b67aa888/SpatialNormalization/fixed_masked.nii.gz) and moving (/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/dc07e9d1b58f033a5ccbd12582048f30b67aa888/SpatialNormalization/ants_t1_to_mni_Warped.nii.gz) images[0m
+2026-03-26 22:41:40 |[34;20m INFO     [0m|[34;20m niworkflows      [0m|[34;20m Generating visual report[0m
+2026-03-26 22:41:54 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "SpatialNormalization", elapsed time 34.665631s.[0m
+2026-03-26 22:41:56 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.SpatialNormalization.SpatialNormalization" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/07722f3821dad78e9396df2927868fc622a5042d/SpatialNormalization".[0m
+2026-03-26 22:41:56 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "SpatialNormalization" <niworkflows.interfaces.reportlets.registration.SpatialNormalizationRPT>[0m
+2026-03-26 22:41:57 |[34;20m INFO     [0m|[34;20m niworkflows      [0m|[34;20m Estimating initial transform using AffineInitializer[0m
+2026-03-26 22:42:09 |[34;20m INFO     [0m|[34;20m niworkflows      [0m|[34;20m Loading settings from file /opt/conda/lib/python3.11/site-packages/niworkflows/data/t1w-mni_registration_testing_000.json.[0m
+2026-03-26 22:42:09 |[34;20m INFO     [0m|[34;20m niworkflows      [0m|[34;20m Retry #1, commandline: 
+antsRegistration --collapse-output-transforms 1 --dimensionality 3 --float 0 --initial-moving-transform [ /local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/07722f3821dad78e9396df2927868fc622a5042d/SpatialNormalization/transform.mat, 0 ] --initialize-transforms-per-stage 0 --interpolation LanczosWindowedSinc --output [ ants_t1_to_mni, ants_t1_to_mni_Warped.nii.gz ] --transform Rigid[ 1.0 ] --metric Mattes[ /local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/07722f3821dad78e9396df2927868fc622a5042d/SpatialNormalization/fixed_masked.nii.gz, /local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/07722f3821dad78e9396df2927868fc622a5042d/SpatialNormalization/moving_masked.nii.gz, 1, 56, Random, 0.2 ] --convergence [ 20, 1e-07, 15 ] --smoothing-sigmas 4.0vox --shrink-factors 2 --use-histogram-matching 0 --transform Affine[ 1.0 ] --metric Mattes[ /local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/07722f3821dad78e9396df2927868fc622a5042d/SpatialNormalization/fixed_masked.nii.gz, /local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/07722f3821dad78e9396df2927868fc622a5042d/SpatialNormalization/moving_masked.nii.gz, 1, 56, Random, 0.1 ] --convergence [ 15, 1e-08, 5 ] --smoothing-sigmas 2.0vox --shrink-factors 1 --use-histogram-matching 1 --winsorize-image-intensities [ 0.005, 0.995 ]  --write-composite-transform 1[0m
+2026-03-26 22:42:12 |[34;20m INFO     [0m|[34;20m niworkflows      [0m|[34;20m Successful spatial normalization (retry #1).[0m
+2026-03-26 22:42:14 |[34;20m INFO     [0m|[34;20m niworkflows      [0m|[34;20m Report - setting fixed (/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/07722f3821dad78e9396df2927868fc622a5042d/SpatialNormalization/fixed_masked.nii.gz) and moving (/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/07722f3821dad78e9396df2927868fc622a5042d/SpatialNormalization/ants_t1_to_mni_Warped.nii.gz) images[0m
+2026-03-26 22:42:14 |[34;20m INFO     [0m|[34;20m niworkflows      [0m|[34;20m Generating visual report[0m
+2026-03-26 22:42:30 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "SpatialNormalization", elapsed time 33.796435s.[0m
+2026-03-26 22:42:30 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_norm" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/dc07e9d1b58f033a5ccbd12582048f30b67aa888/ds_report_norm".[0m
+2026-03-26 22:42:30 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ds_report_norm" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-03-26 22:42:30 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ds_report_norm", elapsed time 0.004988s.[0m
+2026-03-26 22:42:30 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_norm" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/07722f3821dad78e9396df2927868fc622a5042d/ds_report_norm".[0m
+2026-03-26 22:42:30 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ds_report_norm" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-03-26 22:42:30 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ds_report_norm", elapsed time 0.0049s.[0m
+2026-03-26 22:42:30 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "_tpms_std2t1w0" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/fd53104ab67be7a3420ede7f45187ae09a297277/tpms_std2t1w/mapflow/_tpms_std2t1w0".[0m
+2026-03-26 22:42:30 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "_tpms_std2t1w1" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/fd53104ab67be7a3420ede7f45187ae09a297277/tpms_std2t1w/mapflow/_tpms_std2t1w1".[0m
+2026-03-26 22:42:30 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "_tpms_std2t1w2" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/fd53104ab67be7a3420ede7f45187ae09a297277/tpms_std2t1w/mapflow/_tpms_std2t1w2".[0m
+2026-03-26 22:42:30 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "_tpms_std2t1w0" <niworkflows.interfaces.fixes.FixHeaderApplyTransforms>[0m
+2026-03-26 22:42:30 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "_tpms_std2t1w0" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/dc07e9d1b58f033a5ccbd12582048f30b67aa888/tpms_std2t1w/mapflow/_tpms_std2t1w0".[0m
+2026-03-26 22:42:30 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "_tpms_std2t1w1" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/dc07e9d1b58f033a5ccbd12582048f30b67aa888/tpms_std2t1w/mapflow/_tpms_std2t1w1".[0m
+2026-03-26 22:42:30 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "_tpms_std2t1w2" <niworkflows.interfaces.fixes.FixHeaderApplyTransforms>[0m
+2026-03-26 22:42:30 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "_tpms_std2t1w1" <niworkflows.interfaces.fixes.FixHeaderApplyTransforms>[0m
+2026-03-26 22:42:30 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "_tpms_std2t1w2" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/dc07e9d1b58f033a5ccbd12582048f30b67aa888/tpms_std2t1w/mapflow/_tpms_std2t1w2".[0m
+2026-03-26 22:42:30 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "_tpms_std2t1w0" <niworkflows.interfaces.fixes.FixHeaderApplyTransforms>[0m
+2026-03-26 22:42:30 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "_tpms_std2t1w1" <niworkflows.interfaces.fixes.FixHeaderApplyTransforms>[0m
+2026-03-26 22:42:30 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "_tpms_std2t1w2" <niworkflows.interfaces.fixes.FixHeaderApplyTransforms>[0m
+2026-03-26 22:42:32 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "_tpms_std2t1w0" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/07722f3821dad78e9396df2927868fc622a5042d/tpms_std2t1w/mapflow/_tpms_std2t1w0".[0m
+2026-03-26 22:42:32 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "_tpms_std2t1w1" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/07722f3821dad78e9396df2927868fc622a5042d/tpms_std2t1w/mapflow/_tpms_std2t1w1".[0m
+2026-03-26 22:42:32 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "_tpms_std2t1w0" <niworkflows.interfaces.fixes.FixHeaderApplyTransforms>[0m
+2026-03-26 22:42:32 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "_tpms_std2t1w1" <niworkflows.interfaces.fixes.FixHeaderApplyTransforms>[0m
+2026-03-26 22:42:39 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "_tpms_std2t1w2", elapsed time 8.678088s.[0m
+2026-03-26 22:42:39 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "_tpms_std2t1w0", elapsed time 8.753177s.[0m
+2026-03-26 22:42:39 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "_tpms_std2t1w1", elapsed time 8.755652s.[0m
+2026-03-26 22:42:40 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "_tpms_std2t1w0" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/fd53104ab67be7a3420ede7f45187ae09a297277/tpms_std2t1w/mapflow/_tpms_std2t1w0".[0m
+2026-03-26 22:42:40 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Cached "_tpms_std2t1w0" - collecting precomputed outputs[0m
+2026-03-26 22:42:40 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] "_tpms_std2t1w0" found cached.[0m
+2026-03-26 22:42:40 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "_tpms_std2t1w1" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/fd53104ab67be7a3420ede7f45187ae09a297277/tpms_std2t1w/mapflow/_tpms_std2t1w1".[0m
+2026-03-26 22:42:40 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Cached "_tpms_std2t1w1" - collecting precomputed outputs[0m
+2026-03-26 22:42:40 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] "_tpms_std2t1w1" found cached.[0m
+2026-03-26 22:42:40 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "_tpms_std2t1w2" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/fd53104ab67be7a3420ede7f45187ae09a297277/tpms_std2t1w/mapflow/_tpms_std2t1w2".[0m
+2026-03-26 22:42:40 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Cached "_tpms_std2t1w2" - collecting precomputed outputs[0m
+2026-03-26 22:42:40 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] "_tpms_std2t1w2" found cached.[0m
+2026-03-26 22:42:40 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "_tpms_std2t1w2" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/07722f3821dad78e9396df2927868fc622a5042d/tpms_std2t1w/mapflow/_tpms_std2t1w2".[0m
+2026-03-26 22:42:40 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "_tpms_std2t1w2" <niworkflows.interfaces.fixes.FixHeaderApplyTransforms>[0m
+2026-03-26 22:42:40 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "_tpms_std2t1w0", elapsed time 8.609825s.[0m
+2026-03-26 22:42:41 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "_tpms_std2t1w1", elapsed time 8.74656s.[0m
+2026-03-26 22:42:42 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.brain_tissue_segmentation.format_tpm_names" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/brain_tissue_segmentation/fd53104ab67be7a3420ede7f45187ae09a297277/format_tpm_names".[0m
+2026-03-26 22:42:42 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.HeadMaskWorkflow.Enhance" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/HeadMaskWorkflow/fd53104ab67be7a3420ede7f45187ae09a297277/Enhance".[0m
+2026-03-26 22:42:42 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "format_tpm_names" <nipype.interfaces.utility.wrappers.Function>[0m
+2026-03-26 22:42:42 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "Enhance" <nipype.interfaces.utility.wrappers.Function>[0m
+2026-03-26 22:42:43 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "Enhance", elapsed time 0.866617s.[0m
+2026-03-26 22:42:44 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "format_tpm_names", elapsed time 1.798501s.[0m
+2026-03-26 22:42:44 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.HeadMaskWorkflow.Grad" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/HeadMaskWorkflow/fd53104ab67be7a3420ede7f45187ae09a297277/Grad".[0m
+2026-03-26 22:42:44 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.HeadMaskWorkflow.apply_mask" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/HeadMaskWorkflow/fd53104ab67be7a3420ede7f45187ae09a297277/apply_mask".[0m
+2026-03-26 22:42:44 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "Grad" <nipype.interfaces.utility.wrappers.Function>[0m
+2026-03-26 22:42:44 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "apply_mask" <niworkflows.interfaces.nibabel.ApplyMask>[0m
+2026-03-26 22:42:44 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "apply_mask", elapsed time 0.352957s.[0m
+2026-03-26 22:42:46 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "_tpms_std2t1w0", elapsed time 16.007268s.[0m
+2026-03-26 22:42:46 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "_tpms_std2t1w2", elapsed time 16.413006s.[0m
+2026-03-26 22:42:47 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "_tpms_std2t1w1", elapsed time 16.145685s.[0m
+2026-03-26 22:42:48 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "_tpms_std2t1w0" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/dc07e9d1b58f033a5ccbd12582048f30b67aa888/tpms_std2t1w/mapflow/_tpms_std2t1w0".[0m
+2026-03-26 22:42:48 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Cached "_tpms_std2t1w0" - collecting precomputed outputs[0m
+2026-03-26 22:42:48 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] "_tpms_std2t1w0" found cached.[0m
+2026-03-26 22:42:48 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "_tpms_std2t1w1" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/dc07e9d1b58f033a5ccbd12582048f30b67aa888/tpms_std2t1w/mapflow/_tpms_std2t1w1".[0m
+2026-03-26 22:42:48 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Cached "_tpms_std2t1w1" - collecting precomputed outputs[0m
+2026-03-26 22:42:48 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] "_tpms_std2t1w1" found cached.[0m
+2026-03-26 22:42:48 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "_tpms_std2t1w2" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/dc07e9d1b58f033a5ccbd12582048f30b67aa888/tpms_std2t1w/mapflow/_tpms_std2t1w2".[0m
+2026-03-26 22:42:48 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Cached "_tpms_std2t1w2" - collecting precomputed outputs[0m
+2026-03-26 22:42:48 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] "_tpms_std2t1w2" found cached.[0m
+2026-03-26 22:42:49 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "_tpms_std2t1w2", elapsed time 9.043165s.[0m
+2026-03-26 22:42:50 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.HeadMaskWorkflow.Enhance" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/HeadMaskWorkflow/dc07e9d1b58f033a5ccbd12582048f30b67aa888/Enhance".[0m
+2026-03-26 22:42:50 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.brain_tissue_segmentation.format_tpm_names" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/brain_tissue_segmentation/dc07e9d1b58f033a5ccbd12582048f30b67aa888/format_tpm_names".[0m
+2026-03-26 22:42:50 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "Enhance" <nipype.interfaces.utility.wrappers.Function>[0m
+2026-03-26 22:42:50 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "_tpms_std2t1w0" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/07722f3821dad78e9396df2927868fc622a5042d/tpms_std2t1w/mapflow/_tpms_std2t1w0".[0m
+2026-03-26 22:42:50 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "format_tpm_names" <nipype.interfaces.utility.wrappers.Function>[0m
+2026-03-26 22:42:50 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Cached "_tpms_std2t1w0" - collecting precomputed outputs[0m
+2026-03-26 22:42:50 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] "_tpms_std2t1w0" found cached.[0m
+2026-03-26 22:42:50 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "_tpms_std2t1w1" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/07722f3821dad78e9396df2927868fc622a5042d/tpms_std2t1w/mapflow/_tpms_std2t1w1".[0m
+2026-03-26 22:42:50 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Cached "_tpms_std2t1w1" - collecting precomputed outputs[0m
+2026-03-26 22:42:50 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] "_tpms_std2t1w1" found cached.[0m
+2026-03-26 22:42:50 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "_tpms_std2t1w2" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/SpatialNormalization/07722f3821dad78e9396df2927868fc622a5042d/tpms_std2t1w/mapflow/_tpms_std2t1w2".[0m
+2026-03-26 22:42:50 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Cached "_tpms_std2t1w2" - collecting precomputed outputs[0m
+2026-03-26 22:42:50 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] "_tpms_std2t1w2" found cached.[0m
+2026-03-26 22:42:50 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "Grad", elapsed time 6.33265s.[0m
+2026-03-26 22:42:51 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "Enhance", elapsed time 1.383605s.[0m
+2026-03-26 22:42:52 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.brain_tissue_segmentation.format_tpm_names" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/brain_tissue_segmentation/07722f3821dad78e9396df2927868fc622a5042d/format_tpm_names".[0m
+2026-03-26 22:42:52 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.HeadMaskWorkflow.Enhance" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/HeadMaskWorkflow/07722f3821dad78e9396df2927868fc622a5042d/Enhance".[0m
+2026-03-26 22:42:52 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.HeadMaskWorkflow.Grad" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/HeadMaskWorkflow/dc07e9d1b58f033a5ccbd12582048f30b67aa888/Grad".[0m
+2026-03-26 22:42:52 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.HeadMaskWorkflow.GradientThreshold" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/HeadMaskWorkflow/fd53104ab67be7a3420ede7f45187ae09a297277/GradientThreshold".[0m
+2026-03-26 22:42:52 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.HeadMaskWorkflow.apply_mask" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/HeadMaskWorkflow/dc07e9d1b58f033a5ccbd12582048f30b67aa888/apply_mask".[0m
+2026-03-26 22:42:52 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "format_tpm_names" <nipype.interfaces.utility.wrappers.Function>[0m
+2026-03-26 22:42:52 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "GradientThreshold" <nipype.interfaces.utility.wrappers.Function>[0m
+2026-03-26 22:42:52 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "Grad" <nipype.interfaces.utility.wrappers.Function>[0m
+2026-03-26 22:42:52 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "apply_mask" <niworkflows.interfaces.nibabel.ApplyMask>[0m
+2026-03-26 22:42:52 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "Enhance" <nipype.interfaces.utility.wrappers.Function>[0m
+2026-03-26 22:42:52 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "apply_mask", elapsed time 0.575648s.[0m
+2026-03-26 22:42:53 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "Enhance", elapsed time 1.107087s.[0m
+2026-03-26 22:42:53 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "format_tpm_names", elapsed time 3.574833s.[0m
+2026-03-26 22:42:54 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "format_tpm_names", elapsed time 1.845336s.[0m
+2026-03-26 22:42:54 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.HeadMaskWorkflow.Grad" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/HeadMaskWorkflow/07722f3821dad78e9396df2927868fc622a5042d/Grad".[0m
+2026-03-26 22:42:54 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.HeadMaskWorkflow.apply_mask" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/HeadMaskWorkflow/07722f3821dad78e9396df2927868fc622a5042d/apply_mask".[0m
+2026-03-26 22:42:54 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "apply_mask" <niworkflows.interfaces.nibabel.ApplyMask>[0m
+2026-03-26 22:42:54 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "Grad" <nipype.interfaces.utility.wrappers.Function>[0m
+2026-03-26 22:42:54 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "apply_mask", elapsed time 0.369497s.[0m
+2026-03-26 22:42:57 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "Grad", elapsed time 5.028139s.[0m
+2026-03-26 22:42:58 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.HeadMaskWorkflow.GradientThreshold" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/HeadMaskWorkflow/dc07e9d1b58f033a5ccbd12582048f30b67aa888/GradientThreshold".[0m
+2026-03-26 22:42:58 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "GradientThreshold" <nipype.interfaces.utility.wrappers.Function>[0m
+2026-03-26 22:43:00 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "Grad", elapsed time 6.609432s.[0m
+2026-03-26 22:43:02 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.HeadMaskWorkflow.GradientThreshold" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/HeadMaskWorkflow/07722f3821dad78e9396df2927868fc622a5042d/GradientThreshold".[0m
+2026-03-26 22:43:02 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "GradientThreshold" <nipype.interfaces.utility.wrappers.Function>[0m
+2026-03-26 22:43:05 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "GradientThreshold", elapsed time 12.744405s.[0m
+2026-03-26 22:43:06 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.PlotHeadmask" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/fd53104ab67be7a3420ede7f45187ae09a297277/PlotHeadmask".[0m
+2026-03-26 22:43:06 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.AirMaskWorkflow.ArtifactMask" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/AirMaskWorkflow/fd53104ab67be7a3420ede7f45187ae09a297277/ArtifactMask".[0m
+2026-03-26 22:43:06 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "PlotHeadmask" <nireports.interfaces.mosaic.PlotContours>[0m
+2026-03-26 22:43:06 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ArtifactMask" <mriqc.interfaces.anatomical.ArtifactMask>[0m
+2026-03-26 22:43:09 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "PlotHeadmask", elapsed time 2.719118s.[0m
+2026-03-26 22:43:10 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_headmask" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/fd53104ab67be7a3420ede7f45187ae09a297277/ds_report_headmask".[0m
+2026-03-26 22:43:10 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ds_report_headmask" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-03-26 22:43:10 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ds_report_headmask", elapsed time 0.00506s.[0m
+2026-03-26 22:43:11 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ArtifactMask", elapsed time 5.110971s.[0m
+2026-03-26 22:43:12 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.ComputeIQMs.provenance" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/ComputeIQMs/fd53104ab67be7a3420ede7f45187ae09a297277/provenance".[0m
+2026-03-26 22:43:12 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "provenance" <mriqc.interfaces.reports.AddProvenance>[0m
+2026-03-26 22:43:12 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "provenance", elapsed time 0.070443s.[0m
+2026-03-26 22:43:12 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.ComputeIQMs.ComputeQI2" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/ComputeIQMs/fd53104ab67be7a3420ede7f45187ae09a297277/ComputeQI2".[0m
+2026-03-26 22:43:12 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.PlotAirmask" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/fd53104ab67be7a3420ede7f45187ae09a297277/PlotAirmask".[0m
+2026-03-26 22:43:12 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.PlotArtmask" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/fd53104ab67be7a3420ede7f45187ae09a297277/PlotArtmask".[0m
+2026-03-26 22:43:12 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ComputeQI2" <mriqc.interfaces.anatomical.ComputeQI2>[0m
+2026-03-26 22:43:12 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "PlotArtmask" <nireports.interfaces.mosaic.PlotContours>[0m
+2026-03-26 22:43:12 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "PlotAirmask" <nireports.interfaces.mosaic.PlotContours>[0m
+2026-03-26 22:43:15 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "PlotArtmask", elapsed time 2.6719239999999997s.[0m
+2026-03-26 22:43:15 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "PlotAirmask", elapsed time 2.745282s.[0m
+2026-03-26 22:43:15 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "GradientThreshold", elapsed time 13.301676s.[0m
+2026-03-26 22:43:16 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_airmask" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/fd53104ab67be7a3420ede7f45187ae09a297277/ds_report_airmask".[0m
+2026-03-26 22:43:16 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.AirMaskWorkflow.ArtifactMask" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/AirMaskWorkflow/07722f3821dad78e9396df2927868fc622a5042d/ArtifactMask".[0m
+2026-03-26 22:43:16 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.PlotHeadmask" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/07722f3821dad78e9396df2927868fc622a5042d/PlotHeadmask".[0m
+2026-03-26 22:43:16 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ds_report_airmask" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-03-26 22:43:16 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ArtifactMask" <mriqc.interfaces.anatomical.ArtifactMask>[0m
+2026-03-26 22:43:16 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "PlotHeadmask" <nireports.interfaces.mosaic.PlotContours>[0m
+2026-03-26 22:43:16 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ds_report_airmask", elapsed time 0.004811s.[0m
+2026-03-26 22:43:16 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_artmask" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/fd53104ab67be7a3420ede7f45187ae09a297277/ds_report_artmask".[0m
+2026-03-26 22:43:16 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ds_report_artmask" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-03-26 22:43:16 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ds_report_artmask", elapsed time 0.004813s.[0m
+2026-03-26 22:43:20 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "PlotHeadmask", elapsed time 3.792804s.[0m
+2026-03-26 22:43:20 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_headmask" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/07722f3821dad78e9396df2927868fc622a5042d/ds_report_headmask".[0m
+2026-03-26 22:43:20 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ds_report_headmask" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-03-26 22:43:20 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ds_report_headmask", elapsed time 0.005367s.[0m
+2026-03-26 22:43:21 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ArtifactMask", elapsed time 5.600947s.[0m
+2026-03-26 22:43:22 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.ComputeIQMs.provenance" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/ComputeIQMs/07722f3821dad78e9396df2927868fc622a5042d/provenance".[0m
+2026-03-26 22:43:22 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "provenance" <mriqc.interfaces.reports.AddProvenance>[0m
+2026-03-26 22:43:22 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "provenance", elapsed time 0.058271s.[0m
+2026-03-26 22:43:22 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.PlotAirmask" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/07722f3821dad78e9396df2927868fc622a5042d/PlotAirmask".[0m
+2026-03-26 22:43:22 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.ComputeIQMs.ComputeQI2" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/ComputeIQMs/07722f3821dad78e9396df2927868fc622a5042d/ComputeQI2".[0m
+2026-03-26 22:43:22 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.PlotArtmask" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/07722f3821dad78e9396df2927868fc622a5042d/PlotArtmask".[0m
+2026-03-26 22:43:22 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "PlotAirmask" <nireports.interfaces.mosaic.PlotContours>[0m
+2026-03-26 22:43:22 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ComputeQI2" <mriqc.interfaces.anatomical.ComputeQI2>[0m
+2026-03-26 22:43:22 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "PlotArtmask" <nireports.interfaces.mosaic.PlotContours>[0m
+2026-03-26 22:43:23 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ComputeQI2", elapsed time 11.27553s.[0m
+2026-03-26 22:43:24 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_noisefit" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/fd53104ab67be7a3420ede7f45187ae09a297277/ds_report_noisefit".[0m
+2026-03-26 22:43:24 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ds_report_noisefit" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-03-26 22:43:24 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ds_report_noisefit", elapsed time 0.005205s.[0m
+2026-03-26 22:43:25 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "PlotArtmask", elapsed time 3.497054s.[0m
+2026-03-26 22:43:26 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "PlotAirmask", elapsed time 3.809779s.[0m
+2026-03-26 22:43:26 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_artmask" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/07722f3821dad78e9396df2927868fc622a5042d/ds_report_artmask".[0m
+2026-03-26 22:43:26 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ds_report_artmask" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-03-26 22:43:26 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ds_report_artmask", elapsed time 0.004794s.[0m
+2026-03-26 22:43:28 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_airmask" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/07722f3821dad78e9396df2927868fc622a5042d/ds_report_airmask".[0m
+2026-03-26 22:43:28 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ds_report_airmask" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-03-26 22:43:28 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ds_report_airmask", elapsed time 0.004813s.[0m
+2026-03-26 22:43:30 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "GradientThreshold", elapsed time 31.786466s.[0m
+2026-03-26 22:43:30 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.PlotHeadmask" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/dc07e9d1b58f033a5ccbd12582048f30b67aa888/PlotHeadmask".[0m
+2026-03-26 22:43:30 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.AirMaskWorkflow.ArtifactMask" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/AirMaskWorkflow/dc07e9d1b58f033a5ccbd12582048f30b67aa888/ArtifactMask".[0m
+2026-03-26 22:43:30 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "PlotHeadmask" <nireports.interfaces.mosaic.PlotContours>[0m
+2026-03-26 22:43:30 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ArtifactMask" <mriqc.interfaces.anatomical.ArtifactMask>[0m
+2026-03-26 22:43:34 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ComputeQI2", elapsed time 11.568393s.[0m
+2026-03-26 22:43:34 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "PlotHeadmask", elapsed time 3.884074s.[0m
+2026-03-26 22:43:34 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_headmask" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/dc07e9d1b58f033a5ccbd12582048f30b67aa888/ds_report_headmask".[0m
+2026-03-26 22:43:34 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ds_report_headmask" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-03-26 22:43:34 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ds_report_headmask", elapsed time 0.0049s.[0m
+2026-03-26 22:43:34 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_noisefit" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/07722f3821dad78e9396df2927868fc622a5042d/ds_report_noisefit".[0m
+2026-03-26 22:43:34 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ds_report_noisefit" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-03-26 22:43:34 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ds_report_noisefit", elapsed time 0.004799s.[0m
+2026-03-26 22:43:35 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ArtifactMask", elapsed time 4.924228s.[0m
+2026-03-26 22:43:36 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.brain_tissue_segmentation.segmentation" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/brain_tissue_segmentation/fd53104ab67be7a3420ede7f45187ae09a297277/segmentation".[0m
+2026-03-26 22:43:36 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "segmentation" <nipype.interfaces.ants.segmentation.Atropos>[0m
+2026-03-26 22:44:25 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "segmentation", elapsed time 49.410782s.[0m
+2026-03-26 22:44:26 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.brain_tissue_segmentation.segmentation" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/brain_tissue_segmentation/dc07e9d1b58f033a5ccbd12582048f30b67aa888/segmentation".[0m
+2026-03-26 22:44:26 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "segmentation" <nipype.interfaces.ants.segmentation.Atropos>[0m
+2026-03-26 22:46:06 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "segmentation", elapsed time 99.920427s.[0m
+2026-03-26 22:46:08 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.brain_tissue_segmentation.segmentation" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/brain_tissue_segmentation/07722f3821dad78e9396df2927868fc622a5042d/segmentation".[0m
+2026-03-26 22:46:08 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "segmentation" <nipype.interfaces.ants.segmentation.Atropos>[0m
+2026-03-26 22:47:00 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "segmentation", elapsed time 52.025071s.[0m
+2026-03-26 22:47:02 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.ComputeIQMs.provenance" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/ComputeIQMs/dc07e9d1b58f033a5ccbd12582048f30b67aa888/provenance".[0m
+2026-03-26 22:47:02 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.ComputeIQMs.harmonize" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/ComputeIQMs/fd53104ab67be7a3420ede7f45187ae09a297277/harmonize".[0m
+2026-03-26 22:47:02 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.ComputeIQMs.harmonize" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/ComputeIQMs/dc07e9d1b58f033a5ccbd12582048f30b67aa888/harmonize".[0m
+2026-03-26 22:47:02 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.PlotSegmentation" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/dc07e9d1b58f033a5ccbd12582048f30b67aa888/PlotSegmentation".[0m
+2026-03-26 22:47:02 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.PlotSegmentation" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/07722f3821dad78e9396df2927868fc622a5042d/PlotSegmentation".[0m
+2026-03-26 22:47:02 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.ComputeIQMs.harmonize" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/ComputeIQMs/07722f3821dad78e9396df2927868fc622a5042d/harmonize".[0m
+2026-03-26 22:47:02 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.PlotSegmentation" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/fd53104ab67be7a3420ede7f45187ae09a297277/PlotSegmentation".[0m
+2026-03-26 22:47:02 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "provenance" <mriqc.interfaces.reports.AddProvenance>[0m
+2026-03-26 22:47:02 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "harmonize" <mriqc.interfaces.anatomical.Harmonize>[0m
+2026-03-26 22:47:02 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "PlotSegmentation" <nireports.interfaces.mosaic.PlotContours>[0m
+2026-03-26 22:47:02 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "PlotSegmentation" <nireports.interfaces.mosaic.PlotContours>[0m
+2026-03-26 22:47:02 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "harmonize" <mriqc.interfaces.anatomical.Harmonize>[0m
+2026-03-26 22:47:02 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "harmonize" <mriqc.interfaces.anatomical.Harmonize>[0m
+2026-03-26 22:47:02 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "PlotSegmentation" <nireports.interfaces.mosaic.PlotContours>[0m
+2026-03-26 22:47:02 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "provenance", elapsed time 0.090166s.[0m
+2026-03-26 22:47:02 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.ComputeIQMs.ComputeQI2" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/ComputeIQMs/dc07e9d1b58f033a5ccbd12582048f30b67aa888/ComputeQI2".[0m
+2026-03-26 22:47:02 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.PlotAirmask" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/dc07e9d1b58f033a5ccbd12582048f30b67aa888/PlotAirmask".[0m
+2026-03-26 22:47:02 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ComputeQI2" <mriqc.interfaces.anatomical.ComputeQI2>[0m
+2026-03-26 22:47:02 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "PlotAirmask" <nireports.interfaces.mosaic.PlotContours>[0m
+2026-03-26 22:47:03 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "harmonize", elapsed time 0.977766s.[0m
+2026-03-26 22:47:03 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "harmonize", elapsed time 1.242367s.[0m
+2026-03-26 22:47:03 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "harmonize", elapsed time 1.625185s.[0m
+2026-03-26 22:47:04 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.ComputeIQMs.measures" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/ComputeIQMs/fd53104ab67be7a3420ede7f45187ae09a297277/measures".[0m
+2026-03-26 22:47:04 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.ComputeIQMs.measures" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/ComputeIQMs/dc07e9d1b58f033a5ccbd12582048f30b67aa888/measures".[0m
+2026-03-26 22:47:04 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.PlotArtmask" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/dc07e9d1b58f033a5ccbd12582048f30b67aa888/PlotArtmask".[0m
+2026-03-26 22:47:04 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "PlotArtmask" <nireports.interfaces.mosaic.PlotContours>[0m
+2026-03-26 22:47:04 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "measures" <mriqc.interfaces.anatomical.StructuralQC>[0m
+2026-03-26 22:47:04 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "measures" <mriqc.interfaces.anatomical.StructuralQC>[0m
+2026-03-26 22:47:05 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "PlotSegmentation", elapsed time 3.233241s.[0m
+2026-03-26 22:47:06 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_segm" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/fd53104ab67be7a3420ede7f45187ae09a297277/ds_report_segm".[0m
+2026-03-26 22:47:06 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ds_report_segm" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-03-26 22:47:06 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ds_report_segm", elapsed time 0.005246s.[0m
+2026-03-26 22:47:06 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.ComputeIQMs.measures" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/ComputeIQMs/07722f3821dad78e9396df2927868fc622a5042d/measures".[0m
+2026-03-26 22:47:06 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "measures" <mriqc.interfaces.anatomical.StructuralQC>[0m
+2026-03-26 22:47:06 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "PlotAirmask", elapsed time 4.096485s.[0m
+2026-03-26 22:47:06 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "PlotSegmentation", elapsed time 4.512662s.[0m
+2026-03-26 22:47:07 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "PlotSegmentation", elapsed time 4.7213650000000005s.[0m
+2026-03-26 22:47:07 |[93;20m WARNING  [0m|[93;20m nipype.interface [0m|[93;20m Estimated signal variation in the background was too small (MAD=0.0, sigma=18.0536)[0m
+2026-03-26 22:47:07 |[93;20m WARNING  [0m|[93;20m nipype.interface [0m|[93;20m Estimated signal variation in the background was too small (MAD=0.0, sigma=18.0536)[0m
+2026-03-26 22:47:07 |[93;20m WARNING  [0m|[93;20m nipype.interface [0m|[93;20m Estimated signal variation in the background was too small (MAD=0.0, sigma=18.0536)[0m
+2026-03-26 22:47:08 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "PlotArtmask", elapsed time 3.969062s.[0m
+2026-03-26 22:47:08 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_segm" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/dc07e9d1b58f033a5ccbd12582048f30b67aa888/ds_report_segm".[0m
+2026-03-26 22:47:08 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ds_report_segm" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-03-26 22:47:08 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ds_report_segm", elapsed time 0.004926s.[0m
+2026-03-26 22:47:08 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_segm" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/07722f3821dad78e9396df2927868fc622a5042d/ds_report_segm".[0m
+2026-03-26 22:47:08 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ds_report_segm" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-03-26 22:47:08 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ds_report_segm", elapsed time 0.004854s.[0m
+2026-03-26 22:47:08 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_airmask" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/dc07e9d1b58f033a5ccbd12582048f30b67aa888/ds_report_airmask".[0m
+2026-03-26 22:47:08 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ds_report_airmask" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-03-26 22:47:08 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ds_report_airmask", elapsed time 0.004889s.[0m
+2026-03-26 22:47:09 |[93;20m WARNING  [0m|[93;20m nipype.interface [0m|[93;20m Estimated signal variation in the background was too small (MAD=0.0, sigma=54.8489)[0m
+2026-03-26 22:47:09 |[93;20m WARNING  [0m|[93;20m nipype.interface [0m|[93;20m Estimated signal variation in the background was too small (MAD=0.0, sigma=54.8489)[0m
+2026-03-26 22:47:09 |[93;20m WARNING  [0m|[93;20m nipype.interface [0m|[93;20m Estimated signal variation in the background was too small (MAD=0.0, sigma=54.8489)[0m
+2026-03-26 22:47:10 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_artmask" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/dc07e9d1b58f033a5ccbd12582048f30b67aa888/ds_report_artmask".[0m
+2026-03-26 22:47:10 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ds_report_artmask" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-03-26 22:47:10 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ds_report_artmask", elapsed time 0.004909s.[0m
+2026-03-26 22:47:11 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "measures", elapsed time 6.862419s.[0m
+2026-03-26 22:47:12 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.ComputeIQMs.datasink" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/ComputeIQMs/fd53104ab67be7a3420ede7f45187ae09a297277/datasink".[0m
+2026-03-26 22:47:12 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "datasink" <mriqc.interfaces.bids.IQMFileSink>[0m
+2026-03-26 22:47:12 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "datasink", elapsed time 0.001578s.[0m
+2026-03-26 22:47:12 |[93;20m WARNING  [0m|[93;20m nipype.interface [0m|[93;20m Estimated signal variation in the background was too small (MAD=0.0, sigma=20.4952)[0m
+2026-03-26 22:47:12 |[93;20m WARNING  [0m|[93;20m nipype.interface [0m|[93;20m Estimated signal variation in the background was too small (MAD=0.0, sigma=20.4952)[0m
+2026-03-26 22:47:12 |[93;20m WARNING  [0m|[93;20m nipype.interface [0m|[93;20m Estimated signal variation in the background was too small (MAD=0.0, sigma=20.4952)[0m
+2026-03-26 22:47:13 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ComputeQI2", elapsed time 10.898595s.[0m
+2026-03-26 22:47:14 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_noisefit" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/anat_report_wf/dc07e9d1b58f033a5ccbd12582048f30b67aa888/ds_report_noisefit".[0m
+2026-03-26 22:47:14 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ds_report_noisefit" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-03-26 22:47:14 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ds_report_noisefit", elapsed time 0.005036s.[0m
+2026-03-26 22:47:15 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "measures", elapsed time 11.050994s.[0m
+2026-03-26 22:47:16 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.ComputeIQMs.datasink" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/ComputeIQMs/dc07e9d1b58f033a5ccbd12582048f30b67aa888/datasink".[0m
+2026-03-26 22:47:16 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "datasink" <mriqc.interfaces.bids.IQMFileSink>[0m
+2026-03-26 22:47:16 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "datasink", elapsed time 0.000575s.[0m
+2026-03-26 22:47:25 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "measures", elapsed time 18.88583s.[0m
+2026-03-26 22:47:26 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.ComputeIQMs.datasink" in "/local/nvme/ds005664_ts010.783806/ds/tmp/mriqc_wf/anatMRIQC/ComputeIQMs/07722f3821dad78e9396df2927868fc622a5042d/datasink".[0m
+2026-03-26 22:47:26 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "datasink" <mriqc.interfaces.bids.IQMFileSink>[0m
+2026-03-26 22:47:26 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "datasink", elapsed time 0.001119s.[0m
+2026-03-26 22:47:28 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m Generating reports...[0m
+2026-03-26 22:47:29 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m Report generation finished (3 reports).[0m
+2026-03-26 22:47:29 |[33;20m IMPORTANT [0m|[33;20m mriqc            [0m|[33;20m Participant level finished successfully averaging 00h 03min 41s per subject.[0m
+2026-03-26 22:47:29 |[34;20m INFO     [0m|[34;20m mriqc            [0m|[34;20m Generating BIDS derivatives metadata.[0m
+----------------------------------------------------------------
+  MRIQC completed (elapsed time 00h 11min 03s).
+----------------------------------------------------------------
+
